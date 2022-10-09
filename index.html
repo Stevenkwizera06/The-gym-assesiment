@@ -1,118 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The gym assesiment</title>
+    <title>clonning website</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
-<body class="bg-green-800">
-   <header class="bg-white border w-full h-24">
-    <nav>
-        <div>
-            <img src="./images/KIT-image.html" alt="">
+
+<body>
+    <header class="bg-white border w-full h-24 flex">
+        <nav class="flex">
+            <div>
+                <img class="w-60 h-16 md:w-40 md:h-20" src="./images/Logo_KIT.svg.png" alt="">
+            </div>
+            <div class="flex flex-col justify-center ml-96 mt-8">
+                <div class="hidden md:flex md:space-x-8 ">
+                    <div class="space-x-8 flex text-sm font-thin ml-10 ">
+                        <a class="hover:text-green-500" href="">Home</a>
+                        <a class="hover:text-green-500" href="">Plain Language</a>
+                        <a class="hover:text-green-500" href="">Legals</a>
+                        <a class="hover:text-green-500" href="">Privacy Policy</a>
+                        <a class="hover:text-green-500" href="">Accessibility</a>
+                        <a class="hover:text-green-500" href="">Sitemap</a>
+                        <a class="hover:text-green-500" href="">Intanet</a>
+                        <div class="hover:text-green-500 flex space-x-2">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                                </svg>
+                            </div>
+                            <span>KIT</span>
+                        </div>
+                        <div class="hover:text-green-500 flex space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                            </svg>
+                            <span>DE</span>
+                        </div>
+                        <div class="hover:text-green-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex md:space-x-4 ml-96 text-sm mt-2">
+                    <a class="hover:text-green-500" href="">KIT</a>
+                    <a class="hover:text-green-500" href="">Topics</a>
+                    <a class="hover:text-green-500" href="">Studies</a>
+                    <a class="hover:text-green-500" href="">Reaserch</a>
+                    <a class="hover:text-green-500" href="">Innovation</a>
+                    <a class="hover:text-green-500" href="">Career</a>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--Moblie-->
+        <div class="md:hidden flex -m">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                </svg>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
         </div>
-        <div>
-            <a href="">Home</a>
-            <a href="">Plain Language</a>
-            <a href="">Legals</a>
-            <a href="">Privacy Policy</a>
-            <a href="">Accessibility</a>
-            <a href="">Sitemap</a>
-            <a href="">Intanet</a>
+    </header>
+    <main class="">
+        <section class="section_one">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide relative ">
+                        <img class="" src="https://www.kit.edu/img/header_dossier%20studium_1920p.jpg" alt="" srcset="">
+                        <div class="absolute left-0 px-12 py-11 top-0 w-full">
+                            <h1 class="text-white text-left">
+                                <a href="http://" class="">Studying at KIT</a>
+                            </h1>
+                            <p class="text-white mt-6 text-left"><a>Research-based learning between academic tradition
+                                    and cutting-edge research. Learn more.</a> </p>
+                            <div class="flex flex-wrap justify-between gap-5 buttons-wrapper text-left">
+                                <a class="stage-slider-tile slider-buttons rounded-tr-xl rounded-bl-xl w-1/2 text-white text-xl font-extralight mt-6 "
+                                    href="/" title="Research-based Studies">
+                                    <h3>Research-based Studies</h3>
+                                    <p>To the dossier</p>
+                                </a>
+                                <a class="stage-slider-tile slider-buttons rounded-tr-xl rounded-bl-xl w-1/2 text-white text-xl font-light mt-6"
+                                    href="/" title="Research-based Studies">
+                                    <h3>Research-based Studies</h3>
+                                    <p>To the dossier</p>
+                                </a>
+                                <a class="stage-slider-tile slider-buttons rounded-tr-xl rounded-bl-xl w-1/2 text-white text-xl font-light mt-4"
+                                    href="/" title="Research-based Studies">
+                                    <h3>Research-based Studies</h3>
+                                    <p>To the dossier</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide relative slider-2">
+                        <img class="" src="https://www.kit.edu/img/header_klimaforschung-Afrika_schattiert.jpg" alt=""
+                            srcset="">
+                        <div class="absolute left-0 px-12 py-11 top-0 w-full">
+                            <h1 class="text-white text-left">
+                                <a href="http://" class="">Studying at KIT</a>
+                            </h1>
+                            <p class="text-white mt-6 text-left"><a>Research-based learning between academic tradition
+                                    and cutting-edge research. Learn more.</a> </p>
+                            <div class="flex flex-wrap justify-between gap-5 buttons-wrapper text-left">
+                                <a class="stage-slider-tile slider-buttons rounded-tr-xl rounded-bl-xl w-1/2 text-white text-xl font-extralight mt-6 "
+                                    href="/" title="Research-based Studies">
+                                    <h3>Understanding the Meteorological Relationships </h3>
+                                    <p>To the topic highlight</p>
+                                </a>
+                                <a class="stage-slider-tile slider-buttons rounded-tr-xl rounded-bl-xl w-1/2 text-white text-xl font-light mt-6"
+                                    href="/" title="Research-based Studies">
+                                    <h3>KIT international </h3>
+                                    <p>To the research magazine</p>
+                                </a>
 
-            <div>
-                <img src="" alt="">
-                <span>KIT</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-
-            <div>
-                <img src="" alt="">
-                <span>DE</span>
+            <div class="bg-black flex black-section px-8 py-12">
+                <a class="stage-slider-tile slider-buttons rounded-tr-xl 
+                rounded-bl-xl w-1/2 text-white text-xl font-extralight border-4 border-white
+                h-20 flex items-center pl-5" href="/" title="Research-based Studies">
+                    <p>To the topic highlight</p>
+                </a>
+                <a class="stage-slider-tile slider-buttons rounded-tr-xl 
+                rounded-bl-xl w-1/2 text-white text-xl font-extralight border-4 border-white
+                h-20 flex items-center pl-5" href="/" title="Research-based Studies">
+                    <p>To the topic highlight</p>
+                </a>
+                <a class="stage-slider-tile slider-buttons rounded-tr-xl 
+                rounded-bl-xl w-1/2 text-white text-xl font-extralight border-4 border-white
+                h-20 flex items-center pl-5" href="/" title="Research-based Studies">
+                    <p>To the topic highlight</p>
+                </a>
             </div>
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                  </svg>
-                  
+        </section>
+        <section class="section_two px-8 pt-5">
+            <h1 class="">News</h1>
+            <div class="flex mt-8 gap-8">
+                <div class="w-3/12 single-news ">
+                    <img class="w-full" src="https://www.kit.edu/img/20221005-AB-01-003-teaser_rdax_1024x574_98s.jpg"
+                        alt="" srcset="">
+                    <h3 class="my-4">New Electrolysis Processes for Sustainable
+                        Chemical Production</h3>
+                    <p>In the future cluster ETOS, researchers are
+                        developing processes that save energy and resources in the chemical industry and reduce
+                        carbon dioxide emissions</p>
+                    <a class="link" href="">
+                        learn more
+                    </a>
+                </div>
+                <div class="w-3/12 single-news ">
+                    <img class="w-full"
+                        src="https://www.kit.edu/img/2022_087_Industrielle-Produktion-mit-KI_rdax_1024x576_98s.jpg"
+                        alt="" srcset="">
+                    <h3 class="my-4">New Electrolysis Processes for Sustainable
+                        Chemical Production</h3>
+                    <p>In the future cluster ETOS, researchers are
+                        developing processes that save energy and resources in the chemical industry and reduce
+                        carbon dioxide emissions</p>
+                    <a class="link" href="">
+                        learn more
+                    </a>
+                </div>
+                <div class="w-3/12 single-news ">
+                    <img class="w-full"
+                        src="https://www.kit.edu/img/2022_085_Forschungsgruppe-SECUSO-erhaelt-Bundespreis-Verbraucherschutz_rdax_1024x576_98s.jpg"
+                        alt="" srcset="">
+                    <h3 class="my-4">New Electrolysis Processes for Sustainable
+                        Chemical Production</h3>
+                    <p>In the future cluster ETOS, researchers are
+                        developing processes that save energy and resources in the chemical industry and reduce
+                        carbon dioxide emissions</p>
+                    <a class="link" href="">
+                        learn more
+                    </a>
+                </div>
+                <div class="w-3/12 single-news ">
+                    <img class="w-full" src="https://www.kit.edu/img/20221005-AB-01-003-teaser_rdax_1024x574_98s.jpg"
+                        alt="" srcset="">
+                    <h3 class="my-4">New Electrolysis Processes for Sustainable
+                        Chemical Production</h3>
+                    <p>In the future cluster ETOS, researchers are
+                        developing processes that save energy and resources in the chemical industry and reduce
+                        carbon dioxide emissions</p>
+                    <a class="link" href="">
+                        learn more
+                    </a>
+                </div>
+
             </div>
-        </div>
+            <div class="flex flex-col md:flex-row mt-20 gap-8 three-column-section">
+                <div class="w-4/12 h-96 px-10 py-10 single-news rounded-tr-xl rounded-bl-xl flex flex-col justify-between"
+                    style="background-image: url('https://www.kit.edu/img/Corona-KeyVisual_MaskeAbstand_quadrat.jpg');">
+                    <!-- <img class="w-full" alt="" srcset="" > -->
+                    <h3 class="my-4">FAQ on the Coronavirus</h3>
 
-        <div>
-            <a href="">KIT</a>
-            <a href="">Topics</a>
-            <a href="">Studies</a>
-            <a href="">Reaserch</a>
-            <a href="">Innovation</a>
-            <a href="">Career</a>
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-                  </svg>
-                  
+                    <div>
+                        <p>Updated questions and answers relating to the Coronavirus. Last Update: Contact to a
+                            positively tested Person (As of October 6, 2022)</p>
+                        <a class="link" href="">
+                            learn more
+                        </a>
+                    </div>
+
+                </div>
+                <div class="w-4/12 h-96 px-10 py-10 single-news rounded-tr-xl rounded-bl-xl flex flex-col justify-between"
+                    style="background-image: url('https://www.kit.edu/img/studieren-20110107-CS-03-173_rdax_1230x769s.jpg');">
+                    <!-- <img class="w-full" alt="" srcset="" > -->
+                    <h3 class="my-4">FAQ on the Coronavirus</h3>
+
+                    <div>
+                        <p>Updated questions and answers relating to the Coronavirus. Last Update: Contact to a
+                            positively tested Person (As of October 6, 2022)</p>
+                        <a class="link" href="">
+                            learn more
+                        </a>
+                    </div>
+
+                </div>
+                <div class="w-4/12 h-96 px-10 py-10 single-news rounded-tr-xl rounded-bl-xl flex flex-col justify-between"
+                    style="background-image: url('https://www.kit.edu/img/studierende-20220601-MH-01-144_rdax_1230x820s.jpg');">
+                    <!-- <img class="w-full" alt="" srcset="" > -->
+                    <h3 class="my-4">FAQ on the Coronavirus</h3>
+
+                    <div>
+                        <p>Updated questions and answers relating to the Coronavirus. Last Update: Contact to a
+                            positively tested Person (As of October 6, 2022)</p>
+                        <a class="link" href="">
+                            learn more
+                        </a>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </nav>
-   </header>
+        </section>
+        <section class="section_three"></section>
+    </main>
+    <footer class="">
 
-   <!--section 1-->
-   <section class="bg-red-400">
-    <div>
-        <div>
-            <img src="https://www.kit.edu/img/header_dossier%20studium_1920p.jpg" alt="">
-        </div>
-        <div>
-            <h1>Studying at KIT</h1>
-            <p>Reaserch based learning between based academic tradition and cutting-edge reaserch Learn more</p>
-
-            <div>
-                <p>Reaserch based Studies</p>
-                <p>To the dossier</p>
-            </div>
-            <div>
-                <p>Degree programs</p>
-                <p>Choose more than 100 degree programs</p>
-            </div>
-            <div>
-                <p>Application</p>
-                <p>Deadlines, Procedures and application portal</p>
-            </div>
-        </div>
-    </div>
-   
-   </section>
-
-   <!--section 2-->
-   <section class="bg-black text-white">
-    <div>
-        <span >YOUNG SCEINTISTS</span>
-        <span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-              </svg>
-              
-        </span>
-    </div>
-    <div>
-        <span >PROSPECTIVE STUDENTS</span>
-        <span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-              </svg>
-              
-        </span>
-    </div>
-    <div>
-        <span >SEARCH</span>
-        <span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-              </svg>                   
-        </span>
-    </div>
-   </section>
+    </footer>
 
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
+
 </html>
